@@ -3,4 +3,13 @@ name = "http-test-derive"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+proc-macro = true
+
 [dependencies]
+quote = { workspace = true }
+anyhow = { workspace = true }
+syn = { workspace = true, features = ["full"] }
+tokio = { workspace = true, features = ["full"] }
+reqwest = { workspace = true, features = ["json"] }
+http-test-core = { path = "../http-test-core" }
