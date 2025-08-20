@@ -1,0 +1,10 @@
+[package]
+name = "demo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { workspace = true, features = ["full"] }
+reqwest = { workspace = true, features = ["json"] }
+http-test-core = { path = "../http-test-core" }
+http-test-derive = { path = "../http-test-derive" }

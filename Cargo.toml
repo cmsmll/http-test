@@ -1,7 +1,14 @@
 [workspace]
-members = ["http-test-core","http-test-derive"]
+members = ["demo", "http-test-core", "http-test-derive"]
 resolver = "2"
 
 [workspace.dependencies]
+syn = { version = "2.0.106" }
+quote = { version = "1.0.40" }
 tokio = { version = "1.47.1" }
+serde = { version = "1.0.219" }
+anyhow = { version = "1.0.99" }
 reqwest = { version = "0.12.23" }
+serde_json = { version = "1.0.143" }
+derive_more = { version = "2.0.1" }
+color-string = { version = "0.1.6" }
