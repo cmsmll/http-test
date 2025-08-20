@@ -4,3 +4,9 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+tokio = { workspace = true, features = ["full"] }
+reqwest = { workspace = true, features = ["json"] }
+derive_more = { workspace = true, features = ["deref", "display"] }
+anyhow = { workspace = true }
+serde_json = { workspace = true }
+color-string = { workspace = true }
